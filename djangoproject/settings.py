@@ -72,11 +72,11 @@ DATABASES = {
         'PASSWORD':os.environ.get('PG_PASSWORD','thanhvy2002@'),
         'NAME': os.environ.get('PG_DB','postgres'),
         'PORT': os.environ.get('PG_PORT','5432'),
-        'HOST': os.environ.get('PG_HOST','192.168.1.11'), # uses the container if set, otherwise it runs locally
+        'HOST': os.environ.get('PG_HOST','192.168.1.10'), # uses the container if set, otherwise it runs locally
     }
 }
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.1.11']
+ALLOWED_HOSTS = ['localhost','127.0.0.1','192.168.1.10']
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
